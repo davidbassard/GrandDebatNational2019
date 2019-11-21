@@ -34,7 +34,7 @@ def contribution(theme_gdn = "ecologique", file_date = "2019-01-31"):
     url = sc.url_gdn(theme_gdn, "csv")[file_date]
     response = requests.get(url = url)
 
-    with open(os.path.join("./data/", "contribution_raw.csv"), "wb", encoding = "utf-8") as f:
+    with open(os.path.join("./data/", "contribution_raw.csv"), mode = "wb") as f:
         f.write(response.content)
         f.close()
 

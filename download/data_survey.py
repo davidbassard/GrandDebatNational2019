@@ -32,7 +32,7 @@ def survey(theme_gdn = "ecologique"):
     url = sc.url_gdn(theme_gdn, "csv")["2019-04-08"]
     response = requests.get(url = url)
 
-    with open(os.path.join("./data/", "survey_raw.csv"), "wb", encoding = "utf-8") as f:
+    with open(os.path.join("./data/", "survey_raw.csv"), mode = "wb") as f:
         f.write(response.content)
         f.close()
 
