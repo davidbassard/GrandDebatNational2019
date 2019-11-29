@@ -16,11 +16,11 @@ from bs4 import BeautifulSoup
 
 def url_zipcode():
 
-    """Retrieve the content of the web page https://www.data.gouv.fr/fr/datasets/base-officielle-des-codes-postaux/ 
+    """Retrieves the content of the web page https://www.data.gouv.fr/fr/datasets/base-officielle-des-codes-postaux/ 
     and scraping the download URLs of zip code.
 
     Returns:
-        [URL] -- List of URLs
+        {list} -- List of URLs
         A backup file in csv format is created in the "data" folder and named "backup_url_zipcode"
     """
 

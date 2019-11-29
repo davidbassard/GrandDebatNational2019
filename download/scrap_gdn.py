@@ -33,7 +33,7 @@ def url_gdn(theme_gdn = "ecologique", file_format = "csv"):
         Two file formats available: "csv" and "json"
 
     Returns:
-        {date : URL} -- dictionary of dates and URLs
+        {dict} -- dictionary of dates and URLs
         A backup file in csv format is created in the "data" folder and named "backup_url"
     """
 
