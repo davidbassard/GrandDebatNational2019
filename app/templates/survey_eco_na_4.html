@@ -1,0 +1,205 @@
+<!-- Source: https://codepen.io/mxbck/pen/Qrjada -->
+
+<!doctype html>
+
+<html lang="fr">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+
+        <!-- Plotly -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
+        <title>Responses to question 4 : author type is not available</title>
+
+    </head>
+
+    <body>
+
+        <div class="admin">
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+            <header class="admin__header">
+
+                <a href="{{ url_for('index') }}" class="logo">
+
+                    <img src="./static/img/cefim.png" width="60%" height="auto" alt=""/>
+
+                </a>
+
+                <div class="toolbar">
+
+                    <a href="#" class="btn btn--primary"> Thématique </a>
+
+                    <a class="theme"> <h1>LA TRANSITION ECOLOGIQUE</h1> </a>
+
+                    <a href="#" class="logout">Log Out</a>
+
+                </div>
+
+            </header>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+            <nav class="admin__nav">
+
+                <ul class="menu">
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="{{ url_for('survey_eco_1') }}">Action écologique vs économie</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="{{ url_for('survey_eco_2') }}">Aides & dispositifs</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="{{ url_for('survey_eco_3') }}">Taxes énergétiques & usages</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                        <a class="menu__link current" href="{{ url_for('survey_eco_4') }}">Devenir des recettes de taxation</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="{{ url_for('survey_eco_5') }}">Financement de la transition écologique</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="{{ url_for('survey_eco_6') }}">Priorités de financement</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="{{ url_for('survey_eco_7') }}">Ecologie vs compétitivité</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                         <a class="menu__link" href="{{ url_for('survey_eco_time') }}">Evolution des contributions</a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+            <main class="admin__main">
+
+                <!-- <h2> </h2> -->
+
+                <div class="dashboard">
+
+                    <div class="dashboard__item dashboard__item--full">
+
+                        <div class="card">
+
+                            <strong>4 - </strong> À quoi les recettes liées aux taxes sur le diesel et l’essence doivent-elles avant tout servir ?
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard__item dashboard__item--full">
+
+                        <div class="chart" id="srna4">
+
+                            <script>
+
+                                var graph = {{ graph_srna4 | safe }}
+                                Plotly.plot("srna4", graph, {})
+                            
+                            </script>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard__item dashboard__item--col">
+
+                        <a href="{{ url_for('survey_eco_4') }}" class="btn btn--primary">Ensemble des auteurs</a>
+
+                    </div>
+
+                    <div class="dashboard__item dashboard__item--col">
+
+                        <a href="{{ url_for('survey_eco_na_4') }}" class="btn btn--primary current">Non renseigné</a>
+
+                    </div>
+
+                    <div class="dashboard__item dashboard__item--col">
+
+                        <a href="{{ url_for('survey_eco_cc_4') }}" class="btn btn--primary">Citoyen & Citoyenne</a>
+
+                    </div>
+
+                    <div class="dashboard__item dashboard__item--col">
+
+                        <a href="{{ url_for('survey_eco_eei_4') }}" class="btn btn--primary">Élu, élue & Institution</a>
+
+                    </div>
+
+                    <div class="dashboard__item dashboard__item--col">
+
+                        <a href="{{ url_for('survey_eco_obl_4') }}" class="btn btn--primary">Organisation à but lucratif</a>
+
+                    </div>
+
+                    <div class="dashboard__item dashboard__item--col">
+
+                        <a href="{{ url_for('survey_eco_obnl_4') }}" class="btn btn--primary">Organisation à but non lucratif</a>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+            <footer class="admin__footer">
+
+                <span>
+
+                    Titre Professionnel : Concepteur Développeur d'Applications
+
+                </span>
+
+                <span>
+
+                    2019 D. Bassard.
+
+                </span>
+
+            </footer>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+        </div>
+
+    </body>
+
+</html>

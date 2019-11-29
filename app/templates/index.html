@@ -1,0 +1,135 @@
+<!-- Source: https://codepen.io/mxbck/pen/Qrjada -->
+
+<!doctype html>
+
+<html lang="fr">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> 
+        <title>Document</title>
+
+    </head>
+
+    <body>
+
+        <div class="admin">
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+            <header class="admin__header">
+
+                <a href="{{ url_for('index') }}" class="logo">
+
+                    <img src="./static/img/cefim.png" width="60%" height="auto" alt=""/>
+
+                </a>
+
+                <div class="toolbar">
+
+                    <a href="#" class="btn btn--primary"> Thématique </a>
+
+                    <a class="theme"> <h1>LE GRAND DEBAT NATIONAL 2019</h1> </a>
+
+                    <a href="#" class="logout">Log Out</a>
+
+                </div>
+
+            </header>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+            <nav class="admin__nav">
+
+                <ul class="menu">
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="{{ url_for('survey_eco_1') }}">La transition écologique</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="#">La fiscalité et les dépenses publiques</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="#">La démocratie et la citoyenneté</a>
+
+                    </li>
+
+                    <li class="menu__item">
+
+                        <a class="menu__link" href="#">L'organisation de l'État et des services publics</a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+            <main class="admin__main">
+
+                <!-- <h2> </h2> -->
+
+                <div class="dashboard">
+
+                    <div class="dashboard__item dashboard__item--full">
+
+                        <p>Ce projet vise à développer une application Python pour l'analyse des données 
+                            quantitatives et qualitatives du Grand Débat National tenu en France en 2019.
+                        </p>
+
+                    </div>
+
+
+                    <div class="dashboard__item dashboard__item--full">
+
+                        <div class="card">
+
+                            <center>
+                            <img src="./static/img/datapict.png" width="80%" height="auto" alt="" />
+                            </center>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+            <footer class="admin__footer">
+
+                <span>
+
+                    Titre Professionnel : Concepteur Développeur d'Applications
+
+                </span>
+
+                <span>
+
+                    2019 D. Bassard.
+
+                </span>
+
+            </footer>
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+
+        </div>
+
+    </body>
+
+</html>
