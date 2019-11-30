@@ -846,7 +846,7 @@ def survey_eco_6():
 
     for i in range(len(data)):
         dico = data[i]
-        if dico['nb'] > 2000:
+        if dico['nb'] > 3000:
             x_data.append(dico['reponse'])
             y_data.append(dico['nb'])
 
@@ -873,8 +873,9 @@ def survey_eco_na_6():
 
     for i in range(len(data)):
         dico = data[i]
-        x_data.append(dico['reponse'])
-        y_data.append(dico['nb'])
+        if dico['nb'] > 600:
+            x_data.append(dico['reponse'])
+            y_data.append(dico['nb'])
 
     return render_template(
         "survey_eco_na_6.html",
@@ -899,8 +900,9 @@ def survey_eco_cc_6():
 
     for i in range(len(data)):
         dico = data[i]
-        x_data.append(dico['reponse'])
-        y_data.append(dico['nb'])
+        if dico['nb'] > 3000:
+            x_data.append(dico['reponse'])
+            y_data.append(dico['nb'])
 
     return render_template(
         "survey_eco_cc_6.html",
@@ -925,8 +927,9 @@ def survey_eco_eei_6():
 
     for i in range(len(data)):
         dico = data[i]
-        x_data.append(dico['reponse'])
-        y_data.append(dico['nb'])
+        if dico['nb'] > 30:
+            x_data.append(dico['reponse'])
+            y_data.append(dico['nb'])
 
     return render_template(
         "survey_eco_eei_6.html",
@@ -951,8 +954,9 @@ def survey_eco_obl_6():
 
     for i in range(len(data)):
         dico = data[i]
-        x_data.append(dico['reponse'])
-        y_data.append(dico['nb'])
+        if dico['nb'] >= 1:
+            x_data.append(dico['reponse'])
+            y_data.append(dico['nb'])
 
     return render_template(
         "survey_eco_obl_6.html",
@@ -977,8 +981,9 @@ def survey_eco_obnl_6():
 
     for i in range(len(data)):
         dico = data[i]
-        x_data.append(dico['reponse'])
-        y_data.append(dico['nb'])
+        if dico['nb'] >= 6:
+            x_data.append(dico['reponse'])
+            y_data.append(dico['nb'])
 
     return render_template(
         "survey_eco_obnl_6.html",
