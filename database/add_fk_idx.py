@@ -69,8 +69,8 @@ def fk_idx(settings, DB_NAME = "gdn_db"):
 
 
     # ------------------------------------------------------------------------------------------------------------------
-    # Add foreign key on the column id_question, id_questionType and id_form to the table responseType 
-    # and an index fulltext on the column label 
+    # Add foreign key on the column id_question, id_questionType and id_form to the table responseType
+    # and an index fulltext on the column label
 
     counter += 1
 
@@ -115,7 +115,7 @@ def fk_idx(settings, DB_NAME = "gdn_db"):
 
     # ------------------------------------------------------------------------------------------------------------------
     # Add foreign key on the column id_questionType, and id_form to the table question
-    # and an index fulltext on the column label 
+    # and an index fulltext on the column label
 
     counter += 1
 
@@ -154,7 +154,7 @@ def fk_idx(settings, DB_NAME = "gdn_db"):
         cnx.commit()
 
     # ------------------------------------------------------------------------------------------------------------------
-    # Add foreign key on the column id_author, id_authorType, id_sr1, id_sr2, id_sr3, id_sr4, isr5, id_sr 6and id_sr7 to 
+    # Add foreign key on the column id_author, id_authorType, id_sr1, id_sr2, id_sr3, id_sr4, isr5, id_sr 6 and id_sr7 to
     # the table respSurveyEco
 
     counter += 1
@@ -277,8 +277,8 @@ def drop_fk_idx(settings, DB_NAME = "gdn_db"):
 
 
     # ------------------------------------------------------------------------------------------------------------------
-    # Drop foreign key on the column id_question, id_questionType and id_form to the table responseType 
-    # and the index fulltext on the column label 
+    # Drop foreign key on the column id_question, id_questionType and id_form to the table responseType
+    # and the index fulltext on the column label
 
     counter += 1
 
@@ -317,7 +317,7 @@ def drop_fk_idx(settings, DB_NAME = "gdn_db"):
 
     # ------------------------------------------------------------------------------------------------------------------
     # Drop foreign key on the column id_questionType, and id_form to the table question
-    # and the index fulltext on the column label 
+    # and the index fulltext on the column label
 
     counter += 1
 

@@ -524,7 +524,7 @@ def survey_eco_4():
 
     data = dq.sr_eco4(settings, DB_NAME = "gdn_db")
     print(data)
-    
+
     x_data = []
     y_data = []
 

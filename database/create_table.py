@@ -11,7 +11,7 @@ import mysql.connector
 from mysql.connector import errorcode
 
 # ------------------------------------------------------------------------------------------------------------------
-# Function to create tables 
+# Function to create tables
 
 def create_table(settings, DB_NAME = "gdn_db"):
 
@@ -31,7 +31,7 @@ def create_table(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor()
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -42,7 +42,7 @@ def create_table(settings, DB_NAME = "gdn_db"):
         print("Database {} is connected.".format(db_name))
 
     # Dictionary of tables
- 
+
     TABLES = {}
 
     TABLES['tmp_survey'] = (
@@ -219,7 +219,7 @@ def drop_table(settings, DB_NAME = 'gdn_db', *TABLE_NAME):
         Keyword Arguments:
         settings {dict} -- connexion credentials of Mysql \n
         DB_NAME {str} -- name of the database - (default: {"gdn_db"})\n
-        TABLE_NAME {list} -- name(s) of tables 
+        TABLE_NAME {list} -- name(s) of tables
     """
 
     # Connecton to database
@@ -231,7 +231,7 @@ def drop_table(settings, DB_NAME = 'gdn_db', *TABLE_NAME):
 
         cursor = cnx.cursor()
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -241,7 +241,7 @@ def drop_table(settings, DB_NAME = 'gdn_db', *TABLE_NAME):
 
         print("Database {} is connected.".format(db_name))
 
-    # Dictionary of tables 
+    # Dictionary of tables
 
     TABLES = {}
 
