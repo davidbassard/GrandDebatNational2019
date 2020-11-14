@@ -62,13 +62,13 @@ This project was completed in 20 days, so I chose to deal in the final dashboard
 
 ![dashboard](https://github.com/davidbassard/GrandDebatNational2019/blob/master/.pictures/dashboard.gif)
 
-## 
+## User guide
 
 * Download and install the latest version of Python: [here](https://www.python.org/downloads/)
 
 * Create a [virtual environment](https://docs.python.org/fr/3/library/venv.html) and install all [libraries](https://pip.pypa.io/en/stable/user_guide/)
 
-* Download and install the latest version of MySQL Community Server - GPL [here](https://dev.mysql.com/downloads/)
+* Download and install the latest version of MySQL Community Server - GPL [here](https://dev.mysql.com/downloads/) <br>
   Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
 
 * To download the data, execute the Python code of `./data_downloading.py` file
