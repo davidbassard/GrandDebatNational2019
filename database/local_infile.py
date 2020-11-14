@@ -18,7 +18,7 @@ def local_infile(settings, li = 'ON'):
     """ Set the gobal variable 'local infile' to "ON" or "OFF".
 
         Keyword Arguments:\n
-        settings {dict} -- connexion credentials of Mysql \n 
+        settings {dict} -- connexion credentials of Mysql \n
         li {str} -- value of 'local infile' (default: {"ON"})
     """
 

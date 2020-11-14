@@ -34,7 +34,7 @@ def sr_eco1(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -89,7 +89,7 @@ def sr_econa1(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -146,7 +146,7 @@ def sr_ecocc1(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -203,7 +203,7 @@ def sr_ecoeei1(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -260,7 +260,7 @@ def sr_ecoobl1(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -317,7 +317,7 @@ def sr_ecoobnl1(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -376,7 +376,7 @@ def sr_eco2(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -432,7 +432,7 @@ def sr_econa2(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -489,7 +489,7 @@ def sr_ecocc2(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -546,7 +546,7 @@ def sr_ecoeei2(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -603,7 +603,7 @@ def sr_ecoobl2(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -660,7 +660,7 @@ def sr_ecoobnl2(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -719,7 +719,7 @@ def sr_eco3(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -775,7 +775,7 @@ def sr_econa3(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -832,7 +832,7 @@ def sr_ecocc3(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -890,7 +890,7 @@ def sr_ecoeei3(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -947,7 +947,7 @@ def sr_ecoobl3(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1004,7 +1004,7 @@ def sr_ecoobnl3(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1063,7 +1063,7 @@ def sr_eco4(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1119,7 +1119,7 @@ def sr_econa4(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1176,7 +1176,7 @@ def sr_ecocc4(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1233,7 +1233,7 @@ def sr_ecoeei4(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1290,7 +1290,7 @@ def sr_ecoobl4(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1347,7 +1347,7 @@ def sr_ecoobnl4(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1406,7 +1406,7 @@ def sr_eco5(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1461,7 +1461,7 @@ def sr_econa5(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1518,7 +1518,7 @@ def sr_ecocc5(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1575,7 +1575,7 @@ def sr_ecoeei5(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1632,7 +1632,7 @@ def sr_ecoobl5(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1689,7 +1689,7 @@ def sr_ecoobnl5(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1748,7 +1748,7 @@ def sr_eco6(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1804,7 +1804,7 @@ def sr_econa6(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1861,7 +1861,7 @@ def sr_ecocc6(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1918,7 +1918,7 @@ def sr_ecoeei6(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -1975,7 +1975,7 @@ def sr_ecoobl6(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -2032,7 +2032,7 @@ def sr_ecoobnl6(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -2091,7 +2091,7 @@ def sr_eco7(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -2147,7 +2147,7 @@ def sr_econa7(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -2204,7 +2204,7 @@ def sr_ecocc7(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -2261,7 +2261,7 @@ def sr_ecoeei7(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -2318,7 +2318,7 @@ def sr_ecoobl7(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -2376,7 +2376,7 @@ def sr_ecoobnl7(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))
@@ -2435,7 +2435,7 @@ def sr_ecotime(settings, DB_NAME = "gdn_db"):
 
         cursor = cnx.cursor(dictionary=True)
         cursor.execute("USE {}".format(db_name))
-    
+
     except mysql.connector.Error as error:
 
         print("Database {} does not exist.".format(db_name))

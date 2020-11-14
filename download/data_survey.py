@@ -19,14 +19,14 @@ def survey(theme_gdn = "ecologique"):
         Keyword Arguments:
         theme_gdn {str} -- theme of "Grand Débat National" - (default: {"ecologique"})
 
-        There are themes: 
+        There are themes:
         - "LA_TRANSITION_ECOLOGIQUE",
         - "LA_FISCALITE_ET_LES_DEPENSES_PUBLIQUES",
         - "DEMOCRATIE_ET_CITOYENNETE",
         - "ORGANISATION_DE_LETAT_ET_DES_SERVICES_PUBLICS"
-        The last word in lowercase and without accent of each theme is sufficient 
+        The last word in lowercase and without accent of each theme is sufficient
         for scraping the corresponding URLs.
-        eg.: "citoyennete" for the theme "DEMOCRATIE_ET_CITOYENNETE" 
+        eg.: "citoyennete" for the theme "DEMOCRATIE_ET_CITOYENNETE"
     """
 
     url = sc.url_gdn(theme_gdn, "csv")["2019-04-08"]

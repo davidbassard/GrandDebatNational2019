@@ -70,6 +70,32 @@ def db_structure(settings, DB_NAME = "gdn_db"):
         cnx.commit()
 
     # ------------------------------------------------------------------------------------------------------------------
+    # In author table, replace the empty entries with 'Non Renseigné' in the authorType column
+
+    counter += 1
+
+    try:
+
+        print("Step", counter, ": ", end = '')
+
+        cursor.execute(
+
+            "UPDATE `author` "
+                "SET `authorType` = 'Non renseigné' "
+                "WHERE `authorType` = '' "
+        )
+
+    except mysql.connector.Error as error:
+
+        print("Something went wrong: {}".format(error))
+
+    else:
+
+        print("Ok. => ", end = '')
+        print(cursor.rowcount, "records updated.")
+        cnx.commit()
+
+    # ------------------------------------------------------------------------------------------------------------------
     # Insert publishedAt, sr1, sr2, sr3, sr4, sr5, sr6, sr7 into table respSurveyEco from tmp_survey
 
     counter += 1
@@ -243,7 +269,7 @@ doivent-elles avant tout servir ?", "2", "1"),
 transition écologique ?", "2", "1"),
         ("Que faudrait-il faire pour protéger la biodiversité et \
 le climat tout en maintenant des activités agricoles et industrielles \
-compétitives par rapport à leurs concurrents étrangers, notamment européens ?", "2", "1"),
+compétitives par rapport à leurs concurrents étrangers, notamment européens ?", "2", "1")
         ]
 
         cursor.executemany(sql, val)
@@ -390,7 +416,7 @@ compétitives par rapport à leurs concurrents étrangers, notamment européens 
 
         cursor.execute(
             "UPDATE `author`, `respSurveyEco`"
-                "SET `respSurveyEco`.`id_author` = `author`.`id`" 
+                "SET `respSurveyEco`.`id_author` = `author`.`id`"
             "WHERE `author`.`authorId` = `respSurveyEco`.`authorId`"
         )
 
@@ -423,13 +449,13 @@ compétitives par rapport à leurs concurrents étrangers, notamment européens 
 
         cursor.execute(
             "UPDATE `authorType`, `respSurveyEco`"
-                "SET `respSurveyEco`.`id_authorType` = `authorType`.`id`" 
+                "SET `respSurveyEco`.`id_authorType` = `authorType`.`id`"
             "WHERE `authorType`.`label` = `respSurveyEco`.`authorType`"
         )
 
         cursor.execute(
             "UPDATE `respSurveyEco` "
-                "SET `respSurveyEco`.`id_authorType`= 1 " 
+                "SET `respSurveyEco`.`id_authorType`= 1 "
             "WHERE `respSurveyEco`.`id_authorType`= ''"
         )
 
@@ -596,13 +622,13 @@ compétitives par rapport à leurs concurrents étrangers, notamment européens 
 
         cursor.execute(
             "UPDATE `responseType`, `respSurveyEco` "
-                "SET `respSurveyEco`.`id_sr4` = `responseType`.`id` " 
+                "SET `respSurveyEco`.`id_sr4` = `responseType`.`id` "
             "WHERE `responseType`.`label` = `respSurveyEco`.`sr4`"
         )
 
         cursor.execute(
             "UPDATE `respSurveyEco` "
-                "SET `respSurveyEco`.`id_sr4`= 10 " 
+                "SET `respSurveyEco`.`id_sr4`= 10 "
             "WHERE `respSurveyEco`.`sr4`= ''"
         )
 
@@ -635,13 +661,13 @@ compétitives par rapport à leurs concurrents étrangers, notamment européens 
 
         cursor.execute(
             "UPDATE `responseType`, `respSurveyEco` "
-                "SET `respSurveyEco`.`id_sr5` = `responseType`.`id` " 
+                "SET `respSurveyEco`.`id_sr5` = `responseType`.`id` "
             "WHERE `responseType`.`label` = `respSurveyEco`.`sr5`"
         )
 
         cursor.execute(
             "UPDATE `respSurveyEco` "
-                "SET `respSurveyEco`.`id_sr5`= 14 " 
+                "SET `respSurveyEco`.`id_sr5`= 14 "
             "WHERE `respSurveyEco`.`sr5`= ''"
         )
 
@@ -674,13 +700,13 @@ compétitives par rapport à leurs concurrents étrangers, notamment européens 
 
         cursor.execute(
             "UPDATE `responseType`, `respSurveyEco` "
-                "SET `respSurveyEco`.`id_sr6` = `responseType`.`id` " 
+                "SET `respSurveyEco`.`id_sr6` = `responseType`.`id` "
             "WHERE `responseType`.`label` = `respSurveyEco`.`sr6` "
         )
 
         cursor.execute(
             "UPDATE `respSurveyEco` "
-                "SET `respSurveyEco`.`id_sr6`= 19 " 
+                "SET `respSurveyEco`.`id_sr6`= 19 "
             "WHERE `respSurveyEco`.`sr6` = ''"
         )
 
@@ -713,13 +739,13 @@ compétitives par rapport à leurs concurrents étrangers, notamment européens 
 
         cursor.execute(
             "UPDATE `responseType`, `respSurveyEco` "
-                "SET `respSurveyEco`.`id_sr7` = `responseType`.`id` " 
+                "SET `respSurveyEco`.`id_sr7` = `responseType`.`id` "
             "WHERE `responseType`.`label` = `respSurveyEco`.`sr7`"
         )
 
         cursor.execute(
             "UPDATE `respSurveyEco` "
-                "SET `respSurveyEco`.`id_sr7`= 84 " 
+                "SET `respSurveyEco`.`id_sr7`= 84 "
             "WHERE `respSurveyEco`.`sr7` = ''"
         )
 
@@ -752,7 +778,7 @@ compétitives par rapport à leurs concurrents étrangers, notamment européens 
 
         cursor.execute(
             "UPDATE `authorType`, `author`"
-                "SET `author`.`id_authorType` = `authorType`.`id`" 
+                "SET `author`.`id_authorType` = `authorType`.`id`"
             "WHERE `authorType`.`label` = `author`.`authorType`"
         )
 

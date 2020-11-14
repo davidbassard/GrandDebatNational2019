@@ -15,7 +15,7 @@ from mysql.connector import errorcode
 
 def create_database(settings, DB_NAME = "gdn_db"):
 
-    """ Creates the MySQL database. 
+    """ Creates the MySQL database.
 
         Keyword Arguments: \n
         settings {dict} -- connexion credentials of Mysql \n

@@ -15,7 +15,7 @@ from download import scrap_zipcode as sz
 
 def zipcode():
 
-    """ 
+    """
     Downloads the french zip code data in CSV format.
     """
 

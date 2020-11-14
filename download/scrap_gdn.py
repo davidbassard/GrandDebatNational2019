@@ -15,19 +15,19 @@ from bs4 import BeautifulSoup
 
 def url_gdn(theme_gdn = "ecologique", file_format = "csv"):
 
-    """Retrieve the content of the web page https://granddebat.fr/pages/donnees-ouvertes 
+    """Retrieve the content of the web page https://granddebat.fr/pages/donnees-ouvertes
     and scraping the download URLs with the theme and file format as argument.
 
     Keyword Arguments:
         theme_gdn {str} -- theme of "Grand Débat National" - (default: {"ecologique"})
-        There are themes: 
+        There are themes:
         - "LA_TRANSITION_ECOLOGIQUE",
         - "LA_FISCALITE_ET_LES_DEPENSES_PUBLIQUES",
         - "DEMOCRATIE_ET_CITOYENNETE",
         - "ORGANISATION_DE_LETAT_ET_DES_SERVICES_PUBLICS"
-        The last word in lowercase and without accent of each theme is sufficient 
+        The last word in lowercase and without accent of each theme is sufficient
         for scraping the corresponding URLs.
-        eg.: "citoyennete" for the theme "DEMOCRATIE_ET_CITOYENNETE" 
+        eg.: "citoyennete" for the theme "DEMOCRATIE_ET_CITOYENNETE"
 
         file_format {str} -- file format downloadable from the scraped URLs - (default: {"csv"})
         Two file formats available: "csv" and "json"
@@ -59,7 +59,7 @@ def url_gdn(theme_gdn = "ecologique", file_format = "csv"):
     html_ref_ext = "." + file_format
     html_href_url = html_analysis.find_all(href = re.compile(html_ref + html_ref_ext))
 
-    # Dictionnary 
+    # Dictionnary
     dict_download_url = {}
 
     for i in range(len(html_href_url)):

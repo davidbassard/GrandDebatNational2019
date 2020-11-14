@@ -123,7 +123,7 @@ def load_data(settings, TABLE_NAME, DB_NAME = "gdn_db", display_limit = 10):
         result = cursor.fetchall()
 
         print("The first {} rows of the file:".format(display_limit))
-        
+
         for row in result:
 
             print(row)
