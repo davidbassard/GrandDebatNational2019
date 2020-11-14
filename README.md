@@ -7,7 +7,7 @@ Project carried out to obtain the professional certificate of Data Analyst.
 ---
 
 This project aimed to develop a Python application for the analysis of quantitative data from the Great National Debate which took place in France in 2019. <br>
-Open data from the Great National Debate are available by following this [link](https://granddebat.fr/pages/donnees-ouvertes).<br><br>
+Open data from the Great National Debate are available by following this [link](https://granddebat.fr/pages/donnees-ouvertes).<br>
 
 **4 topics of contribution:**
 * The ecological transition
@@ -24,7 +24,7 @@ Open data from the Great National Debate are available by following this [link](
   * Closed and multiple-choice questions proposed by the State
   * Predetermined answers
 
-This project was completed in 20 days, so I chose to deal only with the dataset of quick questions on the theme of ecological transition.<br>
+This project was completed in 20 days, so I chose to deal in the final dashboard only with the dataset of quick questions on the theme of ecological transition.<br>
 
 ## Folder structure
 
@@ -42,6 +42,10 @@ This project was completed in 20 days, so I chose to deal only with the dataset 
 ## Use case diagram
 
 ![Use case diagram of the application](https://github.com/davidbassard/GrandDebatNational2019/blob/master/.pictures/user_case_diagram.PNG)
+
+## Database model
+
+
 
 For the moment the application downloads the data, builds a MySQL database and presents some results of the ecological transition questionnaire.
 The results are displayed using the web Flask microframework.
