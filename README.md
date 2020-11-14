@@ -32,12 +32,16 @@ This project was completed in 20 days, so I chose to deal only with the dataset 
 * `app/`: this is a package that contains the Flask web application (back and front-end). Instructions to launch the web application are given [here](https://github.com/davidbassard/GrandDebatNational2019/blob/master/app/readme.txt)
 * `data/`: will contain the raw data in csv format after executing the python code in the `data_dowloading.py` file (more information [here](https://github.com/davidbassard/GrandDebatNational2019/blob/master/data/readme.txt))
 * `database`: this is a package that contains all python files needed to create and structure the MySQL database. To create and structure the MySQL database, execute the python code in the `database_builder.py` file
-* `download`: this is a package that contains all python files needed to scrap and download the open data.
+* `download/`: this is a package that contains all python files needed to scrap and download the open data
 
 ## Additional folders
 
-* `.mysql_dumps`: contains the database model and the enhanced entity-relationship diagram (`gdn_db_model.mwb`), all the queries needed to recreate the database (`gdn_db_build.sql`) and all the queries used in back-end of the dasboard (`gdn_db_queries.sql`). This files were created from MySQL Workbench 8.0.
-* `pictures\`: contains the `user_case_diagram.png` and the `dashboard.gif`
+* `.mysql_dumps/`: contains the database model and the enhanced entity-relationship diagram (`gdn_db_model.mwb`), all the queries needed to recreate the database (`gdn_db_build.sql`) and all the queries used in back-end of the dasboard (`gdn_db_queries.sql`). This files were created from MySQL Workbench 8.0.
+* `pictures/`: contains the `user_case_diagram.png` and the `dashboard.gif`
+
+## Use case diagram
+
+![Use case diagram of the application](https://github.com/davidbassard/GrandDebatNational2019/blob/master/.pictures/user_case_diagram.PNG)
 
 For the moment the application downloads the data, builds a MySQL database and presents some results of the ecological transition questionnaire.
 The results are displayed using the web Flask microframework.
